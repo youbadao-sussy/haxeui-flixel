@@ -45,7 +45,8 @@ class CursorHelper {
         _cursorsPreregistered = true;
 
         if (!registeredCursors.exists("pointer")) {
-            registerCursor("pointer", "haxeui-flixel/styles/default/cursors/pointer.png", 1, -10, -1);
+            // registerCursor("pointer", "haxeui-flixel/styles/default/cursors/pointer.png", 1, -10, -1);
+            registerCursor("pointer", "haxe/ui/backend/flixel/_module/styles/default/cursors/pointer.png", 1, -10, -1);
         }
     }
 }
