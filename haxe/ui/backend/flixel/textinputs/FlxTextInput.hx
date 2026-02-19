@@ -24,7 +24,7 @@ class FlxTextInput extends TextBase {
         // tf.setFormat("fonts/YUGOTHM.TTC", 10);
         tf.onTextChange.add(onInternalChange);
         tf.onScrollChange.add(onScroll);
-        tf.pixelPerfectRender = false;
+        tf.pixelPerfectRender = true;
         _inputData.vscrollPageStep = 1;
         _inputData.vscrollNativeWheel = true;
     }
