@@ -21,9 +21,10 @@ class FlxTextInput extends TextBase {
     public function new() {
         super();
         tf = new FlxInputText(0, 0, 0, null, 8, FlxColor.BLACK, FlxColor.TRANSPARENT);
+        tf.setFormat("fonts/YUGOTHM.TTC", 10);
         tf.onTextChange.add(onInternalChange);
         tf.onScrollChange.add(onScroll);
-        tf.pixelPerfectRender = true;
+        tf.pixelPerfectRender = false;
         _inputData.vscrollPageStep = 1;
         _inputData.vscrollNativeWheel = true;
     }
